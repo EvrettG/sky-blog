@@ -4,27 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
     <header>
-        <h1>Skyblog</h1>
-        <img src="" alt="">
+        <span>
+            <h1>Skyblog</h1>
+            <!-- <img src="./assets/img/sun.jpg" class="modeSwitch" alt="Lightmode toggle displaying either sun or moon"> -->
+        </span>
     </header>
 
-    <section>
+    <section class="mainForm">
         <h2>Blurb about Skyblog and stuff</h2>
         <form>
             <div>
                 <label for="userName">Username</label>
                 <input type="text" name="userName" id="userName" placeholder="Please enter username here">
-            </div>
-            <div>
-                <label for="title">Title</label>
+                <label for="title">Title</label> 
                 <input type="text" name="title" id="title" placeholder="Please enter title here">
             </div>
             <div>
-                <label for="post">Post</label>
-                <input type="text" name="post" id="post" placeholder="Please type your blogpost here">
+                <label for="post">Post</label><br>
+                <input class="postForm" type="text" name="post" id="post" placeholder="Please type your blogpost here">
             </div>
             <button id="submit">Submit</button>
 

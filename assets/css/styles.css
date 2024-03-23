@@ -1,5 +1,26 @@
 /* Main style formating for index page */
 
+header{
+    display: block;
+
+}
+
+.modeSwitch {
+    width: 80px;
+    height: 80px;
+    /* margin: 30px right; */
+    object-fit: cover;
+    border-radius: 12px;
+    /* float: right; */
+    float: inline-end;
+}
+
+.mainForm {
+    margin: auto;
+    width: 75%;
+    border: 2px solid green;
+}
+
 /* Main style formating */
 
 /* lightmode style */
