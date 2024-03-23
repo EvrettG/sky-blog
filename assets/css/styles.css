@@ -1,18 +1,26 @@
 /* Main style formating for index page */
 
 header{
-    display: block;
+    /* display: flex; */
+    /* align-items: center; */
+    border: 2px solid blue;
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+}
+
+header img{
+    margin-left: 10px;
 
 }
 
 .modeSwitch {
-    width: 80px;
-    height: 80px;
+    width: 40px;
+    height: 40px;
     /* margin: 30px right; */
     object-fit: cover;
-    border-radius: 12px;
-    /* float: right; */
-    float: inline-end;
+    /* border-radius: 12px; */
+    float: right;
+    /* float: inline-end; */
 }
 
 .mainForm {
