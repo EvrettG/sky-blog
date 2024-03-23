@@ -8,9 +8,14 @@ header{
     /* justify-content: space-between; */
 }
 
-header img{
-    margin-left: 10px;
-
+.details {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid greenyellow;
+    justify-content: space-between;
+    padding: 5px;
+    
+    
 }
 
 .modeSwitch {
@@ -27,7 +32,50 @@ header img{
     margin: auto;
     width: 75%;
     border: 2px solid green;
+    padding: 10px;
 }
+
+.smallInput {
+    border-radius: 5px;
+    border: 0px ;
+}
+
+.longText {
+    border: 2px double rebeccapurple;
+    padding: 10px;
+    margin: 10px;
+}
+
+.bigInput {
+
+    display: inline-block;
+    width: 300px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical; /* Allow vertical resizing */
+    vertical-align: top;
+    white-space: pre-wrap;
+    overflow: auto;
+    /* word-break: break-all; */
+}
+
+.extraText {
+    width: 85%; /* Set width to 90% of the viewport width */
+    height: 200px; /* Adjust the height as needed */
+    padding: 6px;
+    font-size: 16px;
+    line-height: 1.4;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+
+footer{
+    padding: 20px;
+    text-align: center;
+}
+
 
 /* Main style formating */
 

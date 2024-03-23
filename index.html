@@ -17,21 +17,28 @@
     <section class="mainForm">
         <h2>Blurb about Skyblog and stuff</h2>
         <form>
-            <div>
-                <label for="userName">Username</label>
-                <input type="text" name="userName" id="userName" placeholder="Please enter username here">
-                <label for="title">Title</label> 
-                <input type="text" name="title" id="title" placeholder="Please enter title here">
+            <div class="details">
+                <div>
+                    <label for="userName">Username:</label>
+                    <input class="smallInput" type="text" name="userName" id="userName" placeholder="Please enter username here">
+                </div>
+                <div>
+                    <label for="title">Title:</label> 
+                    <input class="smallInput" type="text" name="title" id="title" placeholder="Please enter title here">
+                </div>
             </div>
-            <div>
-                <label for="post">Post</label><br>
-                <input class="postForm" type="text" name="post" id="post" placeholder="Please type your blogpost here">
+            <div class="longText">
+                <label for="post">Post:</label><br>
+                <!-- <input class="bigInput" name="post" id="bigText" ></input> -->
+                <!-- <input class="bigInput" type="text" name="post" id="post" placeholder="Please type your blogpost here"> -->
+                <textarea class="extraText" name="extraText" id="extraText"  placeholder="Please type your blogpost here the dog has eaten my hat"></textarea>
             </div>
-            <button id="submit">Submit</button>
+            <button class="su" id="submit">Submit</button>
 
         </form>
     </section>
 
     <footer>Made by Evrett Godfrey <a href="https://evrettg.github.io/Week-2-chalenge/">Portfloio</a></footer>
+    <script src="./assets/js/form.js"></script>
 </body>
 </html>
