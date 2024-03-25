@@ -8,11 +8,11 @@ const submitB = document.querySelector('#submitButton');
 
 
 
-function truePosts(){
-    const posts = [];
-    posts.push(JSON.parse(localStorage.getItem(`blogPosts`)));
+// function truePosts(){
+//     const posts = [];
+//     posts.push(JSON.parse(localStorage.getItem(`blogPosts`)));
 
-};
+// };
 
 
 

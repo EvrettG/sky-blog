@@ -1,0 +1,48 @@
+/* Main style formating for Blog page */
+
+
+header{
+    position: fixed;
+    /* To display postion of header */
+    border: 2px solid blue;
+    width: 95%;
+    margin-left: 2%;
+}
+
+header img{
+    padding-right: 10px;
+}
+
+/* formating for the lightmode button */
+.modeSwitch {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    float: right;
+}
+
+/* Empty space to set up later elements */
+.padding{
+    height: 100px;
+}
+
+.posts{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid lightskyblue;
+    width: 80%;
+    margin-left: 5%;
+    padding-left: 1%;
+    /* min-height: 30px;+ */
+    min-height: 250px;
+}
+h4{
+    font-weight: normal;
+    font-style: italic;
+    position: relative;
+    bottom: 0px;
+    margin-top: auto;
+    /* Use to check postion */
+    /* border: 4px solid yellowgreen;  */
+}
+

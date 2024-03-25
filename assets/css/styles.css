@@ -1,14 +1,12 @@
 /* Main style formating for index page */
 
 header{
-    /* display: flex; */
-    /* align-items: center; */
     position: fixed;
     border: 2px solid blue;
     width: 95%;
-    /* flex-direction: row; */
-    /* justify-content: space-between; */
+    margin-left: 2%;
 }
+
 header img{
     padding-right: 10px;
 }
