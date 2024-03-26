@@ -15,6 +15,31 @@ const submitB = document.querySelector('#submitButton');
 // };
 
 
+function getData(){
+    let data = localStorage.getItem('blogPosts');
+    if(!data){
+        return [];
+    }
+    return JSON.parse(data);
+    
+}
+
+function addBlogPost(myPost){
+    let existingData = getData();
+    // experimental work
+    if (existingData === "") {
+        existingData.push(myPost);
+    } else {
+        existingData.unshift(myPost);
+    };
+    // end experimental work un commemnt next line to run as old function
+    // existingData.push(myPost);
+
+    let existingDataStringified = JSON.stringify(existingData);
+    localStorage.setItem('blogPosts', existingDataStringified);
+}
+
+
 
 
 // keep listener event at bottom of function
@@ -53,30 +78,28 @@ submitB.addEventListener('click', function (event){
         //     posts.push(JSON.parse(localStorage.getItem(`blogPosts`)));
         // };
 
-        let posts = [];
-        if (posts.length > 0){
-            posts.push(JSON.parse(localStorage.getItem(`blogPosts`)));
-        }
+        // let posts = [];
+        // if (posts.length > 0){
+        //     posts.push(JSON.parse(localStorage.getItem(`blogPosts`)));
+        // }
         
-        console.log(posts.length+0);
+        // console.log(posts.length+0);
         let blogPost = {
             name: userN,
             title: blogTitle,
             text: textPost,
         };
 
-        console.log(`checkpoint 2`);
-        console.log(blogPost);
-        console.log(`checkpoint 3`);
 
 
-        posts.unshift(blogPost);
-        console.log(posts)
-        console.log(posts.length+0);
-        console.log(`checkpoint 4`);
-        localStorage.setItem('blogPosts', JSON.stringify(posts));
-        console.log(`checkpoint 5`);
-        console.log(localStorage.getItem('blogPosts'))
+
+        // posts.unshift(blogPost);
+        // console.log(posts)
+
+        // localStorage.setItem('blogPosts', JSON.stringify(posts));
+        addBlogPost(blogPost);
+        //console.log(`checkpoint 5`);
+        //console.log(localStorage.getItem('blogPosts'))
     }
 
 })
