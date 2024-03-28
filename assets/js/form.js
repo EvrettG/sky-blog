@@ -2,7 +2,7 @@
 console.log(localStorage)
 // creates a variable based on the submit button
 const submitB = document.querySelector('#submitButton');
-
+const forwardButton = document.querySelector('#forwardButton');
 
 
 
@@ -90,7 +90,7 @@ submitB.addEventListener('click', function (event){
             text: textPost,
         };
 
-
+        window.location.href = './blog.html';
 
 
         // posts.unshift(blogPost);
@@ -101,5 +101,11 @@ submitB.addEventListener('click', function (event){
         //console.log(`checkpoint 5`);
         //console.log(localStorage.getItem('blogPosts'))
     }
+
+})
+
+forwardButton.addEventListener('click', function (event){
+    event.preventDefault();
+    window.location.href = './blog.html';
 
 })

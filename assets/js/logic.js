@@ -11,7 +11,7 @@ modeSwitch.addEventListener('click', function(){
     console.log(mode)
     if (mode === 'light'){
         mode = 'dark';
-        page.setAttribute('class', 'dark');
+        page.setAttribute('class', 'page dark');
         // let button = document.getElementById('modeSwitch');
         button.style.backgroundImage = "url('./assets/img/moon.png')";
         // document.getElementById('#modeSwitch').style.backgroundImage = "url(./assets/img/moon.png)";
@@ -21,7 +21,7 @@ modeSwitch.addEventListener('click', function(){
 
     else{
         mode = 'light';
-        page.setAttribute('class', 'light');
+        page.setAttribute('class', 'page light');
         // let button = document.getElementById('modeSwitch');
         button.style.backgroundImage = "url('./assets/img/sun.png')";
         // document.getElementById('#modeSwitch').style.backgroundImage = "url(./assets/img/sun.png)";

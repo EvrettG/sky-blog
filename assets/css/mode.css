@@ -1,1 +1,106 @@
 /* css Styling for light and dark mode */
+
+/* dark mode */
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.dark header{
+    background-color: black;
+}
+
+.dark .backButton{
+    background-color: #1a1a1a;
+    color: yellow;
+}
+
+.dark .subButton {
+    background-color: #4d4d4d;   
+   }
+
+.dark .forwardButton {
+    background-color: #4d4d4d;   
+}
+
+.dark h2{
+    color: yellow;
+}
+
+.dark button{
+    background-color: black;
+}
+
+.dark div{
+    background-color: #1a1a1a;
+    color: #b3b300;
+}
+
+.dark input{
+    background-color: #1a1a1a;
+    color: gray;
+}
+
+.dark textarea{
+    background-color: #1a1a1a;
+    color: gray;
+}
+
+.dark button{
+    color: gray;
+}
+/* end dark mode */
+
+
+/* Light mode */
+.light header{
+    background-color: #cceeff;
+}
+
+.light .backButton{
+    background-color: #e6f7ff;
+    color: blue;
+}
+
+.light .subButton {
+    background-color: #66b3ff;   
+}
+
+.light .forwardButton {
+    background-color: #66b3ff;   
+}
+
+.light h2{
+    color: blue;
+}
+
+.light div{
+    background-color: #e6f7ff;
+    color: gray;
+}
+
+
+.light button{
+    background-color: #cceeff;
+}
+
+.light input{
+    background-color: #e6f7ff;
+    color: gray;
+}
+
+.light textarea{
+    background-color: #e6f7ff;
+    color: gray;
+}
+
+.light button{
+    columns: gray;
+}
+
+
+
+.light {
+    background-color: #cceeff;
+}
+

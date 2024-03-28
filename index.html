@@ -4,41 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sky Blog</title>
+    <link rel="stylesheet" href="./assets/css/mode.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
-    <header>
-        <span>
-            <h1>Skyblog <img src="./assets/img/sun.jpg" class="modeSwitch" alt="Lightmode toggle displaying either sun or moon"></h1>
+<body class="page light">
+        <header>
+            <span>
+                <h1>Skyblog <button type="button" class="modeSwitchs" id="modeSwitch"></button></h1>
+                
+            </span>
+        </header>
+
+        <section class="mainForm">
+            <h2>Blurb about Skyblog and stuff</h2>
+            <form>
+                <section class="details">
+                    <span>
+                        <label for="userName">Username:</label>
+                        <input class="smallInput" type="text" name="userName" id="userName" placeholder="Please enter username here">
+                    </span>
+                    <span>
+                        <label for="title">Title:</label> 
+                        <input class="smallInput" type="text" name="title" id="title" placeholder="Please enter title here">
+                    </span>
+                </section>
+                <section class="longText">
+                    <label for="post">Post:</label><br>
+                    <!-- <input class="bigInput" name="post" id="bigText" ></input> -->
+                    <!-- <input class="bigInput" type="text" name="post" id="post" placeholder="Please type your blogpost here"> -->
+                    <textarea class="extraText" name="extraText" id="extraText"  placeholder="Please type your blogpost here the dog has eaten my hat"></textarea>
+                </section>
+                <button class="subButton" id="submitButton">Submit</button>
+                <button class="forwardButton" id="forwardButton">To Blogs</button>
+
+            </form>
             
-        </span>
-    </header>
+        </section>
 
-    <section class="mainForm">
-        <h2>Blurb about Skyblog and stuff</h2>
-        <form>
-            <div class="details">
-                <div>
-                    <label for="userName">Username:</label>
-                    <input class="smallInput" type="text" name="userName" id="userName" placeholder="Please enter username here">
-                </div>
-                <div>
-                    <label for="title">Title:</label> 
-                    <input class="smallInput" type="text" name="title" id="title" placeholder="Please enter title here">
-                </div>
-            </div>
-            <div class="longText">
-                <label for="post">Post:</label><br>
-                <!-- <input class="bigInput" name="post" id="bigText" ></input> -->
-                <!-- <input class="bigInput" type="text" name="post" id="post" placeholder="Please type your blogpost here"> -->
-                <textarea class="extraText" name="extraText" id="extraText"  placeholder="Please type your blogpost here the dog has eaten my hat"></textarea>
-            </div>
-            <button class="subButton" id="submitButton">Submit</button>
-
-        </form>
-    </section>
-
-    <footer>Made by Evrett Godfrey <a href="https://evrettg.github.io/Week-2-chalenge/">Portfloio</a></footer>
+        <footer>Made by Evrett Godfrey <a href="https://evrettg.github.io/Week-2-chalenge/">Portfloio</a></footer>
+    <script src="./assets/js/logic.js"></script>
     <script src="./assets/js/form.js"></script>
 </body>
 </html>

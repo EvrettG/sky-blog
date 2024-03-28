@@ -21,14 +21,18 @@ header img{
     
 }
 
-.modeSwitch {
-    width: 40px;
-    height: 40px;
-    /* margin: 30px right; */
+button {
+    background-size: cover; /* Ensures the image covers the entire button */
+    border: none;
+    cursor: pointer;
+  }
+
+.modeSwitchs {
+    width: 70px;
+    height: 50px;
     object-fit: cover;
-    /* border-radius: 12px; */
     float: right;
-    /* float: inline-end; */
+    margin-right: 10px;
 }
 
 .mainForm {
@@ -79,12 +83,24 @@ header img{
 
 footer{
     padding: 20px;
-    text-align: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+
 }
 
 
-/* Main style formating */
+.subButton{
+    border: 2px solid red;
+    border-radius: 5px;
+    height: 30px;
+    width: 48%;
+}
 
-/* lightmode style */
+.forwardButton{
+    border: 2px solid red;
+    border-radius: 5px;
+    height: 30px;
+    width: 48%;
 
-/* darkmode style */
+}

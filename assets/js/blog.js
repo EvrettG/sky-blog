@@ -1,4 +1,4 @@
-
+const backButton = document.querySelector('#backButton');
 // adds blogposts to blog page
 function renderBlogs() {
 
@@ -60,3 +60,9 @@ function getData(){
 }
 
 getData();
+
+backButton.addEventListener('click', function (event){
+    event.preventDefault();
+    window.location.href = './index.html';
+
+})
