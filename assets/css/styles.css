@@ -2,7 +2,6 @@
 
 header{
     position: fixed;
-    border: 2px solid blue;
     width: 95%;
     margin-left: 2%;
 }
@@ -14,7 +13,6 @@ header img{
 .details {
     display: flex;
     flex-direction: row;
-    border: 2px solid greenyellow;
     justify-content: space-between;
     padding: 5px;
     
@@ -38,7 +36,6 @@ button {
 .mainForm {
     margin: auto;
     width: 75%;
-    border: 2px solid green;
     padding: 10px;
     /* padding-top: 100px; */
     position: relative;
@@ -51,7 +48,6 @@ button {
 }
 
 .longText {
-    border: 2px double rebeccapurple;
     padding: 10px;
     margin: 10px;
 }
@@ -91,14 +87,12 @@ footer{
 
 
 .subButton{
-    border: 2px solid red;
     border-radius: 5px;
     height: 30px;
     width: 48%;
 }
 
 .forwardButton{
-    border: 2px solid red;
     border-radius: 5px;
     height: 30px;
     width: 48%;
